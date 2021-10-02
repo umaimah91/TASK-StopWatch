@@ -12,26 +12,26 @@ var milsec = 0;
 
 function startTimer() {
 
-    //TO START THE STOP WATCH WORK IT MUST BE STAT=true
+    /*TO START THE STOP WATCH WORK IT MUST BE STAT=true*/
     if (Runningtime == false) {
         Runningtime = true;
 
 
     }
 
-    //THEN HERE WE CALL THE FUNCTION TO REPATE COUNT TIMER
+    /*THEN HERE WE CALL THE FUNCTION TO REPATE COUNT TIMER*/
     startTimeout = setInterval(timerCycle, 33);
 
 }
 
 
-//THAT FUNCTION CALL WHEN PRESS BUTTON STOP
+/*THAT FUNCTION CALL WHEN PRESS BUTTON STOP*/
 function stopTimer() {
 
-    //HERE CHECKING THE STATE OF TIMER IS RUNN TO STOP TIMER 
+    /*HERE CHECKING THE STATE OF TIMER IS RUNN TO STOP TIMER */
     if (Runningtime == true) {
 
-        //CLEAR THE COUNTING TO RESET THE TIMER TO ZERO
+        /*CLEAR THE COUNTING TO RESET THE TIMER TO ZERO*/
         clearInterval(startTimeout);
         startTimeout = null;
 
@@ -48,10 +48,10 @@ function stopTimer() {
 
 
 
-//THIS FUNCTION CALL WHEN PRESS BUTTON START 
+/*THIS FUNCTION CALL WHEN PRESS BUTTON START */
 function timerCycle() {
 
-    //HERE CONVERT THE VALUE OF TIMER TO integar FOR CONDITION PUT ZERO BEFOR TIMER(hr,mint,sec) WORK 
+    /*HERE CONVERT THE VALUE OF TIMER TO integar FOR CONDITION PUT ZERO BEFOR TIMER(hr,mint,sec) WORK */
     milsec = parseInt(milsec);
     sec = parseInt(sec);
     mint = parseInt(mint);
